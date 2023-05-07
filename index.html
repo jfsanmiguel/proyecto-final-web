@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./recursos/images/2-removebg-preview.png">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Alimedia</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/2-removebg-preview_wzztqs.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- mi estilo -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FreshDia</title>
     <!-- para comentar control k + control c -->
 </head>
 
@@ -15,22 +19,29 @@
     <header class="header">
         <nav class="header__nav-flex">
             <!-- barra de navegación del index -->
-            <!-- logo -->
-            <a href="./index.html"><img class="logo" src="./recursos/images/Alimedia logo.png"
-                    alt="Logo de Alimedia"></a>
-            <!-- menú de paginas web -->
-            <ul class="header__ul-flex">
-
-                <li><a href="./pages/tienda.html">Tienda</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/nuestra_marca.html">Nuestra marca</a></li>
-                <li><a href="./pages/contactanos.html">Contáctanos</a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg" style="background-color: #545643;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img class="header__logo"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426643/ProyectoFreshFood/1_hsk1yc.png" alt="Logo FreshDia"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            <a class="nav-link" href="./pages/nuestra_marca.html">Nuestra Marca</a>
+                            <a class="nav-link" href="./pages/contactanos.html">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <form class="header__busqueda" action="" method="get">
                 <input type="search" name="busqueda">
                 <input type="submit" value="buscar">
             </form>
-        </nav>
 
     </header>
     <main class="main">
@@ -55,14 +66,36 @@
         </div>
     </main>
     <footer class="footer">
-        <ul class="footer__pie">
-            <li><a href="./pages/contactanos.html">Redes</a></li>
-            <li><a href="./pages/productos.html">Información</a></li>
-            <li>Ratrea tu pedido</li>
+        <section class="footer__foot">
+             <!-- acceso a redes sociales por footer -->
+             <div class="footer__social">
+                <div><a href="https://www.facebook.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Facebook_ozbxiu.png"
+                            alt="Facebook"></a>
+                </div>
+                <div><a href="https://www.instagram.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Instagram_kz6r7f.png"
+                            alt="Instagram"></a></div>
+                <div><a href="https://twitter.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/Twitter_o2ix3b.png"
+                            alt="Twitter"></a></div>
+                <div><a href="https://www.tiktok.com/"><img class="footer__redes"
+                            src="https://res.cloudinary.com/dodvy1su7/image/upload/v1682727287/items/TikTok_dowfgg.png"
+                            alt="TikTok"></a></div>
+            </div>
+            <!-- terminos y condiciones -->
+        <div class="footer__pie">
+            <p><a href="./pages/productos.html">Información</a></p>
+            <p>Ratrea tu pedido</p>
+            <p>FreshDia &copy all rights reserved</p>
            
-        </ul>
-        <p>FreshDia &copy all rights reserved</p>
+        </div>
+        </section>
     </footer>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
