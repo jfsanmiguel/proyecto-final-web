@@ -44,31 +44,34 @@
     </header>
     <main class="main">
         <div class="main__seccion">
-            <h1>Tienda</h1>
-            
-            <!-- https://grid.layoutit.com/ -->
-            <section class="main__item">
-                <div>
-                <img class="main__imagenes" src="../recursos/images/Espinaca.jpg" alt="espinaca">
-                <p>Nombre: Pure de verduras</p>
-                <p>Precio: 1111</p>
-                <p>Disponibilidad: 1</p>
-                <button>comprar</button>
-            </div>
-                <div>
-                <img class="main__imagenes" src="../recursos/images/Manzana.jpg" alt="manzana">
-                <p>Nombre: chips de manzana</p>
-                <p>Precio: 2222</p>
-                <p>Disponibilidad: 2</p>
-                <button>comprar</button>
-            </div>
-                <div>
-                <img class="main__imagenes" src="../recursos/images/Vegetales.jpg" alt="vegetales">
-                <p>Nombre: mix de vegetales</p>
-                <p>Precio: 3333</p>
-                <p>Disponibilidad: 3</p>
-                <button>comprar</button>
-            </div>
+            <h1 class="main__encabezado">Tienda</h1>
+            <div class="container text-center">
+                <div class="row row-cols-2">
+                  <div class="col">
+                    <img class="main__imagenes" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/top-view-of-veggie-puree-photo_lti3ce.jpg" alt="pures verduras">
+                    <p>Nombre: Puré de verduras</p>
+                    <p>Precio: $15USD/u / $45USD/kg</p>
+                    <p>Disponibilidad: 10u / 100kg</p>
+                    <button class="main__boton">Comprar</button></div>
+                  <div class="col"><img class="main__imagenes" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/recipe_bakedapplechips_fb_jvupdc.jpg" alt="chips manzana">
+                    <p>Nombre: chips de manzana</p>
+                    <p>Precio: $10USD/u / $30USD/kg</p>
+                    <p>Disponibilidad: 10u / 50kg</p>
+                    <button class="main__boton">Comprar</button></div>
+                  <div class="col">
+                    <img class="main__imagenes" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/chips_de_zanahoria_al_horno_61512_orig_do3cpp.jpg" alt="chips zanahoria">
+                    <p>Nombre: chips zanahoria</p>
+                    <p>Precio: $12USD/u / $36USD/kg</p>
+                    <p>Disponibilidad: 15u / 125kg</p>
+                    <button class="main__boton">Comprar</button></div>
+                  <div class="col">
+                    <img class="main__imagenes" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683428894/ProyectoFreshFood/tiendas-en-linea-snacks-saludables_apoewi.jpg" alt="mix legumbres">
+                    <p>Nombre: mix de legumbres y platano</p>
+                    <p>Precio: $8USD/u / $24USD/kg</p>
+                    <p>Disponibilidad: 20u / 75kg</p>
+                    <button class="main__boton">Comprar</button></div>
+                </div>
+              </div>
     </main>
     <footer class="footer">
         <section class="footer__foot">

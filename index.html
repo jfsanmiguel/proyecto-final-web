@@ -46,12 +46,50 @@
     </header>
     <main class="main">
 
-        <!-- contenido con galería de imágenes de las materias primas y los productos, eslogan e introducción de la marca -->
+        <!-- contenido con galería de imágenes de las materias primas, eslogan e introducción de la marca -->
         <div class="main__seccion">
-            <h1>Alimedia</h1>
+            <h1 class="main__encabezado">FreshDia</h1>
             <section>
-                <img class="main__galeria" src="./recursos/images/d74dd39a-9bbb-4d8f-8019-6020653e1114.jfif" alt="imagenes">
-                <h2>Alimentos saludables y asequibles para el día a día</h2>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="main__galeria" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426686/ProyectoFreshFood/frutas_ng3xo8.jpg" class="d-block w-100" alt="Frutas">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="main__galeria" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426697/ProyectoFreshFood/d74dd39a-9bbb-4d8f-8019-6020653e1114_fc1w8m.jpg" class="d-block w-100" alt="Aguacate y Sacha inchi">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="main__galeria" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426677/ProyectoFreshFood/comer-muchas-zanahorias_gruqax.jpg" class="d-block w-100" alt="Zanahorias">
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="main__galeria" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426709/ProyectoFreshFood/pimiento_rvdjlp.jpg" class="d-block w-100" alt="Pimientos">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="main__galeria" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426672/ProyectoFreshFood/champi%C3%B1ones_uctuqv.webp" class="d-block w-100" alt="Champiñones">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="main__galeria" src="https://res.cloudinary.com/dodvy1su7/image/upload/v1683426655/ProyectoFreshFood/6NDWKSSMW5DNJN7VKTCHTCIKV4_wcgcah.jpg" class="d-block w-100" alt="Espinaca">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <h2>Alimentos frescos, saludables y asequibles para el día a día</h2>
                 <article>
                     <p>¿Estás buscando una alternativa saluable para tu alimentación? En alimedia puedes encontrar
                         diferentes opciones a buen precio. Desde snacks mínimamente procesados recomendados para los
@@ -61,7 +99,29 @@
                         la naturaleza de forma sostenible.</p>
                 </article>
                 <a href="./pages/nuestra_marca.html">Saber más</a>
-                <h3><a href="./pages/contactanos.html">Realiza tu pedido</a></h3>
+                <h3 class="main__pedido">Realiza tu pedido</h3>
+                <p>
+                    <a class="btn btn-primary main__boton" data-bs-toggle="collapse" href="#pedidos1" role="button" aria-expanded="false" aria-controls="pedidos1">Haz tus pedidos personales</a>
+                    <button class="btn btn-primary main__boton" type="button" data-bs-toggle="collapse" data-bs-target="#pedidos2" aria-expanded="false" aria-controls="pedidos2">Haz tus pedidos al por mayor</button>
+                    <button class="btn btn-primary main__boton" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="pedidos1 pedidos2">Haz tus pedidos personalizados</button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="pedidos1">
+                        <div class="card card-body">
+                          Selecciona tus productos para consumo personal y pídelos en la tienda para traerlos a tu residencia por domicilio.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="pedidos2">
+                        <div class="card card-body">
+                         Selecciona tus productos al por mayor y pídelos en la tienda para distribuirlos en tu negocio.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
             </section>
         </div>
     </main>
