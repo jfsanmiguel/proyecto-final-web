@@ -42,7 +42,7 @@
             </nav>
             <form class="header__busqueda" action="" method="get">
                 <input type="search" name="busqueda">
-                <input type="submit" value="buscar">
+                <input class="main__boton" type="submit" value="buscar">
             </form>
     </header>
     <main class="main">
@@ -67,32 +67,40 @@
                                 alt="TikTok"></a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="main__formulario">
-                <form action="#" method="get">
-                    <p>Nombre</p>
-                    <input type="text" name="Nombre">
-                    <br>
-                    <p>E-mail</p>
-                    <input type="email" name="E-mail" id="email">
-                    <br>
-                    <p>Cédula</p>
-                    <input type="number" name="C.C">
-                    <br>
-                    <p>Celular</p>
-                    <input type="tel" name="Celular">
-                    <br>
-                    <p>Acepto términos y condiciones</p>
-                    <input type="checkbox" name="terminos" id="">
-                    <br>
-                    <input type="submit" value="Enviar">
-                    
-                </form>
-            </div>
-            <div class="main__gif">
-                <iframe src="https://giphy.com/embed/8JNmK2TcgnkiZAjHcG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hustle-viceland-fresh-food-local-roots-8JNmK2TcgnkiZAjHcG">via GIPHY</a></p>
 
+                <div class="main__formulario">
+
+                    <form class="main__display" action="#" method="get">
+                        <div>
+                            <p>Nombre</p>
+                            <input type="text" name="Nombre">
+                        </div>
+                        <div>
+                            <p>E-mail</p>
+                            <input type="email" name="E-mail" id="email">
+                        </div>
+                        <div> 
+                            <p>Cédula</p>
+                            <input type="number" name="C.C">
+                        </div>
+                        <div> <p>Celular</p>
+                            <input type="tel" name="Celular"></div>
+                        <div>
+                            <input type="checkbox" name="terminos" id="">
+                            <p>Acepto términos y condiciones</p>
+                        </div>
+                        <div>
+                            <input class="main__boton" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <iframe class="main__gif" src="https://giphy.com/embed/8JNmK2TcgnkiZAjHcG" width="480" height="270"
+                        frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <iframe class="main__gif" src="https://giphy.com/embed/zqtOYPQZ8Kb5pMlH8p" width="480" height="480"
+                        frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                </div>
             </div>
         </section>
 
@@ -117,7 +125,7 @@
             </div>
             <!-- terminos y condiciones -->
             <div class="footer__pie">
-                <p><a href="./pages/productos.html">Información</a></p>
+                <p><a href="./productos.html">Información</a></p>
                 <p>Ratrea tu pedido</p>
                 <p>FreshDia &copy all rights reserved</p>
 
