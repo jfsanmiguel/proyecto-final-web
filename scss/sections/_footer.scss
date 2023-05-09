@@ -31,3 +31,10 @@
     
 }
 //estrategia mobile last-----max-width
+@media(max-width:720px){
+    .footer{
+        &__pie{
+            flex-direction: column;
+        }
+    }
+}

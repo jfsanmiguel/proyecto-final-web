@@ -16,6 +16,10 @@
   text-align: justify;
   padding: 5px; }
 
+.main__encabezado {
+  font-weight: bolder;
+  color: #632B30; }
+
 .header {
   font-family: "Belleza", sans-serif;
   font-size: x-large; }
@@ -36,7 +40,8 @@
 
 .main {
   background-color: #BCD8AE;
-  font-family: "Convergence", sans-serif; }
+  font-family: "Convergence", sans-serif;
+  color: #545643; }
   .main__encabezado {
     color: #632B30; }
   .main__images {
@@ -54,7 +59,11 @@
       text-decoration: none; }
   .main__boton {
     background-color: #BF98A0;
-    border-color: #545643; }
+    border-color: #545643;
+    color: #e7ecef; }
+    .main__boton:hover {
+      background-color: #DFA06E;
+      transform: scale(1.13); }
 
 @media (max-width: 720px) {
   .main {
@@ -163,23 +172,45 @@
 
 .main__container {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  gap: 0px 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr;
+  gap: 5px 5px;
   grid-auto-flow: row;
-  grid-template-areas: "main__marca main__marca main__marca" "main__imagen main__texto main__video" "main__imagen main__texto main__video"; }
+  grid-template-areas: "main__marca main__marca main__marca" "main__imagen main__texto main__video" "main__imagen main__texto main__video";
+  align-items: stretch;
+  justify-items: center; }
 
 .main__marca {
-  grid-area: main__marca; }
+  grid-area: main__marca;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main__logo {
+  width: 10%; }
 
 .main__imagen {
   grid-area: main__imagen; }
 
+.main__veg {
+  margin-left: 10px;
+  width: 90%; }
+  .main__veg:hover {
+    transform: scale(1.08); }
+
 .main__texto {
-  grid-area: main__texto; }
+  grid-area: main__texto;
+  padding-bottom: 15px; }
 
 .main__video {
   grid-area: main__video; }
+  .main__video .unvideo {
+    width: 100%; }
+
+@media (max-width: 720px) {
+  .main__container {
+    display: flex;
+    flex-direction: column; } }
 
 .main__conection {
   display: grid;
@@ -229,3 +260,7 @@
     .footer__pie a {
       text-decoration: none;
       color: #632B30; }
+
+@media (max-width: 720px) {
+  .footer__pie {
+    flex-direction: column; } }
