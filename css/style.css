@@ -226,6 +226,9 @@
 .main__formulario {
   grid-area: 1 / 2 / 3 / 3; }
 
+.main__parte {
+  padding: 13px; }
+
 .main__gif {
   grid-area: 1 / 3 / 3 / 4;
   width: 50%; }
@@ -237,10 +240,20 @@
   .main__comun:hover {
     transform: scale(1.13); }
 
-@media (max-width: 720px) {
+@media (max-width: 769px) {
   .main__conection {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .main__formulario {
+    width: 500px;
+    margin-left: 15px; } }
+
+@media (max-width: 415px) {
+  .main__conection {
+    display: flex;
+    flex-direction: column-reverse; }
+  .main__formulario {
+    width: 80%; } }
 
 .footer {
   background-color: #BF98A0; }

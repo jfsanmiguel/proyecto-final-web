@@ -16,6 +16,9 @@
     &__formulario {
         grid-area: 1 / 2 / 3 / 3; 
     }
+    &__parte{
+        padding: 13px;
+    }
 
     &__gif {
         grid-area: 1 / 3 / 3 / 4; 
@@ -33,11 +36,27 @@
     }
 }
 //estrategia mobile last-----max-width
-@media (max-width:720px){
+@media (max-width:769px){
     .main{
         &__conection{
             display: flex;
             flex-direction: column;
+        }
+        &__formulario{
+            width: 500px;
+            margin-left: 15px;
+        }
+    }
+
+}
+@media (max-width:415px){
+    .main{
+        &__conection{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__formulario{
+            width: 80%;
         }
     }
 }

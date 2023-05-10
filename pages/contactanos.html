@@ -42,7 +42,7 @@
             </nav>
             <form class="header__busqueda" action="" method="get">
                 <input type="search" name="busqueda">
-                <input class="main__boton" type="submit" value="buscar">
+                <button type="submit" class="btn btn-primary main__boton">Buscar</button>
             </form>
     </header>
     <main class="main">
@@ -71,38 +71,72 @@
                 <div class="main__formulario">
 
                     <form class="main__display" action="#" method="get">
-                        <div>
-                            <p>Nombre</p>
-                            <input type="text" name="Nombre">
+                        <div class="main__parte">
+                            <form class="form-floating">
+                                <label for="Nombre">Nombre\Empresa</label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="aaaaaaaaaaaaaaaa"
+                                    value="Nombre">  
+                            </form>
                         </div>
-                        <div>
-                            <p>E-mail</p>
-                            <input type="email" name="E-mail" id="email">
+                        <div class="main__parte">
+                            <form class="form-floating">
+                                <input type="email" class="form-control" id="Correo" placeholder="name@example.com"
+                                    value="email@ejemplo.com">
+                                <label for="Correo">Correo electrónico</label>
+                            </form>
                         </div>
-                        <div>
-                            <p>Cédula</p>
-                            <input type="number" name="C.C">
+                        <div class="main__parte">
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="ID" placeholder="0000000000"
+                                            value="1234567890">
+                                        <label for="ID">Identificación</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelectGrid">
+                                            <option selected>Seleccionar</option>
+                                            <option value="1">Cedula de Ciudadanía (C.C)</option>
+                                            <option value="2">Número de Identificación Tributaria (NIT) </option>
+                                            <option value="3">Cédula de Extranjería (C.E)</option>
+                                        </select>
+                                        <label for="floatingSelectGrid">Tipo de documento</label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div>
-                            <p>Celular</p>
-                            <input type="tel" name="Celular">
+                        <div class="main__parte">
+                            <form class="form-floating">
+                                <input type="tel" class="form-control" id="floatingInputValue" placeholder="Telefono"
+                                    value="Celular">
+                                <label for="floatingInputValue">Teléfono Celular</label>
+                            </form>
                         </div>
-                        <div>
-                            <input type="checkbox" name="terminos" id="">
-                            <p>Acepto términos y condiciones</p>
-                        </div>
-                        <div>
-                            <input class="main__boton" type="submit" value="Enviar">
-                        </div>
+                        <div class="main__parte">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Acepto términos y condiciones
+                                </label>
+                            </div>
+                            <div class="main__parte">
+                                <button type="submit" class="btn btn-primary main__boton">Enviar</button>
+                            </div>
+                            
                     </form>
                 </div>
-                <div>
-                    <iframe class="main__gif" src="https://giphy.com/embed/8JNmK2TcgnkiZAjHcG" width="480" height="270"
-                        frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                    <iframe class="main__gif" src="https://giphy.com/embed/zqtOYPQZ8Kb5pMlH8p" width="480" height="480"
-                        frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </form>
+            </div>
+            <div>
+                <iframe class="main__gif" src="https://giphy.com/embed/8JNmK2TcgnkiZAjHcG" width="480" height="270"
+                    frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe class="main__gif" src="https://giphy.com/embed/zqtOYPQZ8Kb5pMlH8p" width="480" height="480"
+                    frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-                </div>
+            </div>
             </div>
         </section>
 
